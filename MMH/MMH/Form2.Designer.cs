@@ -28,19 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            label3 = new Label();
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.DarkGoldenrod;
+            label3.Location = new Point(414, 151);
+            label3.Name = "label3";
+            label3.Size = new Size(57, 20);
+            label3.TabIndex = 2;
+            label3.Text = "Signup";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(268, 151);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Login";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.login;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(721, 511);
+            Controls.Add(label1);
+            Controls.Add(label3);
             Name = "Form2";
             Text = "Form2";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label3;
+        private Label label1;
     }
 }
